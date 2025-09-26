@@ -8,33 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cricket-inspired design system */
+    --background: 210 20% 98%;
+    --foreground: 220 15% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cricket pitch green primary */
+    --primary: 142 45% 25%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Professional cricket blue */
+    --secondary: 210 35% 45%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Cricket accent colors */
+    --accent: 32 95% 55%;
+    --accent-foreground: 220 15% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 15% 88%;
+    --input: 210 15% 90%;
+    --ring: 142 45% 25%;
+
+    /* Cricket-specific colors */
+    --cricket-green: 142 45% 25%;
+    --cricket-green-light: 142 35% 40%;
+    --cricket-blue: 210 35% 45%;
+    --cricket-orange: 32 95% 55%;
+    --cricket-red: 0 75% 55%;
+
+    /* Gradients */
+    --gradient-pitch: linear-gradient(135deg, hsl(142 45% 25%), hsl(142 35% 35%));
+    --gradient-sky: linear-gradient(180deg, hsl(210 35% 45%), hsl(210 25% 55%));
+    --gradient-stats: linear-gradient(90deg, hsl(142 45% 25%), hsl(210 35% 45%));
+
+    /* Shadows */
+    --shadow-cricket: 0 4px 20px hsl(142 45% 25% / 0.15);
+    --shadow-elevated: 0 8px 30px hsl(220 15% 12% / 0.12);
 
     --radius: 0.5rem;
 
@@ -56,33 +76,49 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 15% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 15% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 142 35% 40%;
+    --primary-foreground: 220 15% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 25%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 32 85% 50%;
+    --accent-foreground: 220 15% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 220 15% 22%;
+    --input: 220 15% 18%;
+    --ring: 142 35% 40%;
+
+    /* Dark mode cricket colors */
+    --cricket-green: 142 35% 40%;
+    --cricket-green-light: 142 25% 50%;
+    --cricket-blue: 210 25% 35%;
+    --cricket-orange: 32 85% 50%;
+    --cricket-red: 0 65% 45%;
+
+    /* Dark gradients */
+    --gradient-pitch: linear-gradient(135deg, hsl(142 35% 25%), hsl(142 25% 35%));
+    --gradient-sky: linear-gradient(180deg, hsl(210 25% 25%), hsl(210 15% 35%));
+    --gradient-stats: linear-gradient(90deg, hsl(142 35% 25%), hsl(210 25% 25%));
+
+    /* Dark shadows */
+    --shadow-cricket: 0 4px 20px hsl(220 15% 8% / 0.3);
+    --shadow-elevated: 0 8px 30px hsl(220 15% 8% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

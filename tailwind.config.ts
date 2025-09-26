@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cricket: {
+          green: "hsl(var(--cricket-green))",
+          "green-light": "hsl(var(--cricket-green-light))",
+          blue: "hsl(var(--cricket-blue))",
+          orange: "hsl(var(--cricket-orange))",
+          red: "hsl(var(--cricket-red))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +64,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-pitch": "var(--gradient-pitch)",
+        "gradient-sky": "var(--gradient-sky)",
+        "gradient-stats": "var(--gradient-stats)",
+      },
+      boxShadow: {
+        cricket: "var(--shadow-cricket)",
+        elevated: "var(--shadow-elevated)",
       },
       borderRadius: {
         lg: "var(--radius)",
